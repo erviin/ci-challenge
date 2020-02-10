@@ -565,7 +565,7 @@ function createElements(content, paymentIntent, publicKey) {
           var displayError = document.getElementById("card-errors");
           displayError.textContent = result.error.message;
         } else {
-          stripePaymentHandler();
+          stripePaymentHandler(paymentIntent.id);
         }
         var progress  = document.querySelector(".progress");
         progress.remove();
@@ -575,9 +575,9 @@ function createElements(content, paymentIntent, publicKey) {
 
 // Implement logic to handle the users authorization for payment.
 // Here you will want to redirect to a successful payments page, or update the page.
-function stripePaymentHandler() {
+function stripePaymentHandler(id) {
   toggleElementsModalVisibility();
-  window.location = '/store/checkout_success';
+  window.location = '/store/checkout_success/'+id;
 }
 
 window.elementsModal = (() => {

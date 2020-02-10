@@ -51,9 +51,7 @@
                         </div>
                         <div class="price-and-button-container">
 
-                            <div>
-                                <div class="product-price">Price : $00.00</div>
-                            </div>
+                            <div class="product-price">Price : $00.00</div>
 
                         </div>
                     </div>
@@ -128,7 +126,7 @@
                                                 currency: "USD",
                                                 amount: data['price'],
                                                 businessName: business_name,
-                                                productName: data['id'],
+                                                productName: data['title'],
                                                 customerEmail: email,
                                                 customerName: name
                                             })

@@ -3,6 +3,7 @@
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     text-align: center;
     margin-top: 55px;
+    overflow: hidden;
   }
   
   .success-message {
@@ -30,13 +31,13 @@
     display: inline-block;
     position: relative;
     /* height: 420px; */
-    width: 420px;
+    /* width: 420px; */
   }
   
   /* Make the image responsive */
   .container1 img {
-    height: 420px;
-    width: 420px;
+    height: 400px;
+    /* width: 420px; */
   }
   
   /* Style the button and place it in the middle of the container11/image */
